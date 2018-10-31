@@ -5,6 +5,7 @@ const app = express();
 
 app.use(morgan('dev'));
 app.use(express.static('public'));
+app.use(express.static('dist'));
 app.use(express.static('src'));
 
 module.exports = app;
